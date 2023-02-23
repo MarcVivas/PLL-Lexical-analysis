@@ -8,7 +8,7 @@
     // Global variable to keep track of the current line number
     int line_count = 1;
 
-    
+
         // Declaration of the ERROR_STATE
 %x ERROR_STATE
 
@@ -48,10 +48,11 @@
                               // Print the invalid expression and quit the error state
 
                               int len = yyleng - 1;
+                              int count = line_count;
                               if(yytext[len] == '\n'){line_count++;}
                               yytext[len]='\0';
                               BEGIN(0);
-                              printf("Error at line %d: invalid expression '%s'\n", line_count, yytext);
+                              printf("Error at line %d: invalid expression '%s'\n", count, yytext);
                             }
 
 <ERROR_STATE>.              {yymore();}
