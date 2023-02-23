@@ -1,4 +1,4 @@
-# PLL - Pràctica 1 - Anàlisi lèxica
+# PLL - Lexical analysis
 22/02/2023
 University of Lleida
 
