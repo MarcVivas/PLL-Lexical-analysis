@@ -15,6 +15,7 @@ University of Lleida
 5. [Exercise 2](#exercise-2)
 6. [Exercise 3](#exercise-3)
 7. [Exercise 4](#exercise-4)
+8. [Exercise 5](#exercise-5)
 
 ## Introduction
 The objective of this project is to use an automatic lexical analyzer generation tool to recognize different languages.
@@ -54,3 +55,4 @@ The program prints the encountered errors and also the tokens that are correct.
 ### Tests
 There are 2 files titled `test.txt` and `test2.txt` that were used to test the exercise. The first file should throw errors and the second should not.
 ## Exercise 4
+## Exercise 5
