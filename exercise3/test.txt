@@ -1,0 +1,25 @@
+// ddasd
+// 3424234
+// ox342
+// b101010
+// Formulas that are correct
+P & Q < - > (!R | (Q - > T ))
+P & < - > (!R | (Q- > T ))
+P & Q < - > (!R | (Q- > T
+P Q < - > (!R (Q- > T ))
+
+// Formulas that are not correct
+p & q < - > (!R | (Q- > T ))
+P + Q ∗ (!R | (Q- > T ))
+[P & Q < - > [!R | (Q- > T )]]
+P & Q <=> (!R | (Q => T ))
+P & Q < - > (!R | (Q- > T ));
+
+
+
+
+
+
+
+
+PA & QF < - > (!R | (QKALSKDLASKD- > T ))

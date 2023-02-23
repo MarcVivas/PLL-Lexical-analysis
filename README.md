@@ -33,9 +33,24 @@ sudo apt-get install -y make
 
 ## Exercise 1
 The only thing to mention in this exercise are the comments. Comments can be added by starting the text with `//` and they will continue until a new line `\n` is encountered.
-
+### Tests
+There are 2 files titled `test.txt` and `test2.txt` that were used to test the exercise. The first file should throw errors and the second should not.
 ## Exercise 2
 
 ## Exercise 3
-
+In this section, you will find a list of considerations that were taken into account while developing the solution for the exercise. The exercise has been implemented following the statement.
+### Comments
+Comments can be added by starting the text with `//` and they will continue until a new line `\n` is encountered.
+### Variables
+Varibales can only be words of length `1` with capital letters `[A-Z]`.
+### Implications and double implications
+The symbol `−` has been replaced for this character `-` which is typeable from the keyboard.
+### Disjunctions
+The symbol `∨` has been replaced for this character `|` which is typeable from the keyboard.
+### Conjunctions
+The symbol `∧` has been replaced for this character `&` which is typeable from the keyboard.
+### Output
+The program prints the encountered errors and also the tokens that are correct.
+### Tests
+There are 2 files titled `test.txt` and `test2.txt` that were used to test the exercise. The first file should throw errors and the second should not.
 ## Exercise 4
