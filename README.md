@@ -18,7 +18,7 @@ University of Lleida
 8. [Exercise 5](#exercise-5)
 
 ## Introduction
-The objective of this project is to use an automatic lexical analyzer generation tool to recognize different languages.
+The objective of this project is to use an automatic lexical analyzer generation tool to recognize different languages. The instructions to complete the project are located at `Statement.pdf`, they are written in Catalan.
 
 ## Required libraries/packages
 You will need to install the next libraries (Ubuntu) if you want to run the programs:
