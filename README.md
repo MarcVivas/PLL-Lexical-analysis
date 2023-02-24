@@ -56,3 +56,91 @@ The program prints the encountered errors and also the tokens that are correct.
 There are 2 files titled `test.txt` and `test2.txt` that were used to test the exercise. The first file should throw errors and the second should not.
 ## Exercise 4
 ## Exercise 5
+The language described below defines a syntax for describing a finite automaton(deterministic and non-deterministic). It includes the definition of an alphabet, a set of states, and the transitions between those states based on the letters in the alphabet. The language allows for the designation of multiple initial states and one or more final states. The purpose of this language is to provide a way to specify a finite automaton and to implement a lexical analyzer that can identify the sequence of tokens in the input based on the defined automaton.
+
+
+### Alphabet definition
+
+Example:
+```
+ALPHABET => b, a, c, d, e, f <=
+```
+> The end of the definition is marked by `<=`.
+
+#### ALPHABET
+`ALPHABET` is a reserved word that is always followed by the operator `=>` to indicate the set of symbols of the automata's alphabet. In other programming languages `ALPHABET` can be seen as `String, int, char...`
+
+#### Alphabet's symbols
+Alphabet's symbols are used to define the set of valid inputs that an automata can accept. The symbols must be letters in lower case separated by commas.
+
+
+
+
+### States definition
+Example:
+```
+STATES => ->q0, q1, ->q2, t3, t0->, t44, k2->   <= // ->q1 is an intial state && t0-> is a final state && q1 is an intermediate state
+```
+> The end of the definition is marked by `<=`.
+
+#### STATES
+`STATES` is a reserved word that is always followed by the operator `=>` to indicate the set of states of the automata. In other programming languages `STATES` can be seen as `String, int, char...`
+
+#### Set of states
+The state names must be one lower case letter followed by a number `Example: q0`. The initial state is indicated by a right arrow `->` followed by the state name. The final state is indicated by the state name followed by a right arrow `->`. The intermediate state is indicated by the state name only. All the states must be separated by commas. 
+
+
+
+### The operator `=>`
+The operator `=>` is used to separate the reserved word from the set of symbols of the alphabet, states or transitions that follow it.
+
+### The operator `<=`
+The operator `<=` is used to mark the end of the definition of the alphabet, states or transitions.
+
+
+
+### Transitions definition
+#### TRANSTITIONS
+`TRANSITIONS` is a reserved word that is always followed by the operator `=>` to indicate the set of transitions of the automata. In other programming languages `TRANSITIONS` can be seen as `String, int, char...`
+
+#### Set of transitions
+The transitions of the automata represent the change of state that the automata goes through when it receives a specific input symbol. The transitions are defined by a state, an input symbol in square brackets `[]`, 3 points `...` and the state that the automata goes to after reading the input symbol. If the automata can go to multiple states after reading the input symbol, the states are separated by commas. The transitions are separated by `\n`.
+
+Example:
+```
+TRANSITIONS => 
+->q0[a]...q1
+->q0[b]...t3,t44
+t3[a]...k2->, q1
+<=
+```
+> The end of the definition is marked by `<=`.
+
+### Example of a complete automata definition
+
+```javascript
+// Alphabet definition
+ALPHABET => a, b, c, d, e, f,g,h,i,     j <=
+
+// States definition
+STATES => ->q0, q1, ->q2, t3, t0->, t44, k2-> <=   // ->q1 is an intial state && t0-> is a final state
+
+// Transitions definitions
+TRANSITIONS => 
+->q0[a]...q1
+->q0[b]...t3,t44
+t3[a]...k2->, q1
+<=
+```
+
+This automata accepts inputs of symbols a, b, c, d, e, f, g, h, i and goes through the following states when reading those symbols:
+
+- From the initial state `q0` to the intermediate state `q1` after reading symbol `a`
+- From the initial state `q0` to the intermediate states `t3` and/or `t44` after reading symbol `b`
+- From the intermediate state `t3` to the final state `k2` and/or the intermediate state `q1` after reading symbol `a`.
+
+### Implementation
+When a token is recognized the program prints its name and representation. It also identifies errors and prints them.
+
+### Tests
+There are 2 files titled `test.txt` and `test2.txt` that were used to test the exercise. The first file should throw errors and the second should not.
