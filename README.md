@@ -87,7 +87,7 @@ STATES => ->q0, q1, ->q2, t3, t0->, t44, k2->   <= // ->q1 is an intial state &&
 `STATES` is a reserved word that is always followed by the operator `=>` to indicate the set of states of the automata. In other programming languages `STATES` can be seen as `String, int, char...`
 
 #### Set of states
-The state names must be one lower case letter followed by a number `Example: q0`. The initial state is indicated by a right arrow `->` followed by the state name. The final state is indicated by the state name followed by a right arrow `->`. The intermediate state is indicated by the state name only. All the states must be separated by commas. 
+The state names must be one lower case letter followed by a number `Example: q0`. The initial state is indicated by a right arrow `->` followed by the state name. The final state is indicated by the state name followed by a right arrow `->`. The intermediate state is indicated by the state name only. All the states must be separated by commas.
 
 
 
@@ -104,14 +104,14 @@ The operator `<=` is used to mark the end of the definition of the alphabet, sta
 `TRANSITIONS` is a reserved word that is always followed by the operator `=>` to indicate the set of transitions of the automata. In other programming languages `TRANSITIONS` can be seen as `String, int, char...`
 
 #### Set of transitions
-The transitions of the automata represent the change of state that the automata goes through when it receives a specific input symbol. The transitions are defined by a state, an input symbol in square brackets `[]`, 3 points `...` and the state that the automata goes to after reading the input symbol. If the automata can go to multiple states after reading the input symbol, the states are separated by commas. The transitions are separated by `\n`.
+The transitions of the automata represent the change of state that the automata goes through when it receives a specific input symbol. The transitions are defined by a state, an input symbol in square brackets `[]`, 3 points `...` and the state that the automata goes to after reading the input symbol. If the automata can go to multiple states after reading the input symbol, the states are separated by commas. The transitions are separated by `;`.
 
 Example:
 ```
-TRANSITIONS => 
-->q0[a]...q1
-->q0[b]...t3,t44
-t3[a]...k2->, q1
+TRANSITIONS =>
+->q0[a]...q1;
+->q0[b]...t3,t44;
+t3[a]...k2->, q1;
 <=
 ```
 > The end of the definition is marked by `<=`.
@@ -126,10 +126,10 @@ ALPHABET => a, b, c, d, e, f,g,h,i,     j <=
 STATES => ->q0, q1, ->q2, t3, t0->, t44, k2-> <=   // ->q1 is an intial state && t0-> is a final state
 
 // Transitions definitions
-TRANSITIONS => 
-->q0[a]...q1
-->q0[b]...t3,t44
-t3[a]...k2->, q1
+TRANSITIONS =>
+->q0[a]...q1;
+->q0[b]...t3,t44;
+t3[a]...k2->, q1;
 <=
 ```
 

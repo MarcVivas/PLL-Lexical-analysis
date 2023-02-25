@@ -1,0 +1,32 @@
+//////////////////////////////////////
+// This is a comment
+/////////////////////////////////////
+// Correct syntax
+
+// Alphabet definition
+ALPHABET => a, b, c, d, e, f,g,h
+,i,
+     j <=
+
+// States definition
+STATES => ->q0, q1, ->q2, t3, t0->, t44, k2->
+  q34->,
+  q11,
+
+  <=   // ->q1 is an intial state && t0-> is a final state
+
+// Transitions definitions
+TRANSITIONS =>
+->q0[a]...q1;
+->q0[b]...t3,t44;
+t3[a]...k2->, q1  ;
+<=
+
+=> <= => <=  => <=  => <= => <=
+=> [ ]
+<= ...
+->a0
+a0
+a0->
+;;;;;
+[[[[]]]]]
