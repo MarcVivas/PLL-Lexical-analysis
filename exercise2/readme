@@ -1,0 +1,17 @@
+El llenguatge escollit per aquest exercici ha sigut Python
+
+l'archiu compta quans elements hi han a qualsevol archiu de les categories de python, i al final mostra el percentatge i el total
+
+Per la categoria de paraules reservades, simplement hem proporcionat la llista de totes les paraules reservades: False, class, from, or, None, continue, global, pass, True, def, if, raise, and, del, import, return, as, elif, in, try, assert, else, is, while, async, except, lambda, with, await, finally, nonlocal, yield, break, for, not
+
+Per als identificadors, seguim les normes de noms dels identificadors de python: qualsevol conjunt de lletra (majuscula o minuscula), número i barra baixa, sempre i quan començi amb una lletra
+
+Igual que amb les paraules reservades, per als espais en blanc simplement donem una llista completa.
+
+Una vegada més, per als separadors donem una llista complerta
+
+Per a les constants, per una banda detectem conjunts de digits que poden tenir un punt entre ells. D'aquesta manera podem detectar constants enters i decimals. També detectem els conjunts de caràcters envoltats per "" i '', amb això podem detectar constants d'string i de caràcter.
+
+Pels comentaris, detectem les linies que començen amb #
+
+Qualsevol altre caràcter es considera auxiliar.
