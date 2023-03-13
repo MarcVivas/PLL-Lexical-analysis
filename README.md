@@ -55,6 +55,12 @@ The program prints the encountered errors and also the tokens that are correct.
 ### Tests
 There are 2 files titled `test.txt` and `test2.txt` that were used to test the exercise. The first file should throw errors and the second should not.
 ## Exercise 4
+### Variables
+The variables are a concatention of a range of characters (specified in the document) and a range of numbers between 0 and 9, so the new variables are like [x-z][0-9].
+### Symbols
+Similar to exercice 3, added extra symbol for the implication and double implication in a string and the reserved word forall and exists.
+### Tests
+There is a file titled `test.txt` with correct lines and incorrect lines.
 ## Exercise 5
 The language described below defines a syntax for describing a finite automaton(deterministic and non-deterministic). It includes the definition of an alphabet, a set of states, and the transitions between those states based on the letters in the alphabet. The language allows for the designation of multiple initial states and one or more final states. The purpose of this language is to provide a way to specify a finite automaton and to implement a lexical analyzer that can identify the sequence of tokens in the input based on the defined automaton.
 
