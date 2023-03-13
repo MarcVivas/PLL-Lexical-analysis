@@ -21,12 +21,12 @@
 
 
 
-"forall"			    printf("PARAULA RESERVADA: %s\n", yytext);
-"exists"			    printf("PARAULA RESERVADA: %s\n", yytext);
+"forall"			    printf("RESERVED WORD: %s\n", yytext);
+"exists"			    printf("RESERVED WORD: %s\n", yytext);
 [x-z][0-9]              printf("VARIABLE: %s\n", yytext);
-[a-c][0-9]              printf("VARIABLE: %s\n", yytext);
-[P-T][0-9]              printf("VARIABLE: %s\n", yytext);
-[f-g][0-9]              printf("VARIABLE: %s\n", yytext);
+[a-c][0-9]              printf("CONSTANT: %s\n", yytext);
+[P-T][0-9]              printf("PREDICATE: %s\n", yytext);
+[f-g][0-9]              printf("FUNCTION: %s\n", yytext);
 !                       printf("NEGATION: %s\n", yytext);
 "&"                     printf("CONJUNCTION: %s\n", yytext);
 "|"                     printf("DISJUNCTION: %s\n", yytext);
