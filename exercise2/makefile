@@ -1,8 +1,8 @@
-all : test
+all : Exercici2Python
 
-test : 	test.l
-				lex test.l
-				gcc -Wall lex.yy.c -o test -ll
+Exercici2Python : 	Exercici2Python.l
+				lex Exercici2Python.l
+				gcc -Wall lex.yy.c -o Exercici2Python -ll
 
 clean :
-	rm -f lex.yy.c test
+	rm -f lex.yy.c Exercici2Python
