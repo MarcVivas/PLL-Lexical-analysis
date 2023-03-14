@@ -57,6 +57,8 @@ For constants, on one hand we detect digit groups that can have a dot between th
 For comments, we simply detect lines starting with #.
 ### Auxiliars
 Any other character is considered an auxiliar.
+### Tests
+For the tests, we use 3 python files, a simple Hello World, a simple function, and a file more similar to real life Python programs
 
 ## Exercise 3
 In this section, you will find a list of considerations that were taken into account while developing the solution for the exercise. The exercise has been implemented following the statement.
