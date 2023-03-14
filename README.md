@@ -36,7 +36,27 @@ sudo apt-get install -y make
 The only thing to mention in this exercise are the comments. Comments can be added by starting the text with `//` and they will continue until a new line `\n` is encountered.
 ### Tests
 There are 2 files titled `test.txt` and `test2.txt` that were used to test the exercise. The first file should throw errors and the second should not.
+
 ## Exercise 2
+### Choosen language
+The choosen language for this exercise is Python, due to our familiarity to it.
+
+### Basic description
+The program counts how many elements of each Python category exist on a specific file, and at the end shows the percentage of each and the total number of elements found
+### Categories
+For the keywords category, we simply used a list of all the Python keywords: False, class, from, or, None, continue, global, pass, True, def, if, raise, and, del, import, return, as, elif, in, try, assert, else, is, while, async, except, lambda, with, await, finally, nonlocal, yield, break, for, not
+
+For the identifiers, we followed the identifier name rules for Python: any group of letters (capitals or not), numbers and underscore (\_), as long as the first character is a letter.
+
+Just like with keywords, for whitespices we simply use a list
+
+Once more, we use a full list for the separators.
+
+For constants, on one hand we detect digit groups that can have a dot between them, which covers integers and floats. We also detect characters surrounded by "" or '', which covers both strings and character constants.
+
+For comments, we simply detect lines starting with #.
+
+Any other character is considered an auxiliar.
 
 ## Exercise 3
 In this section, you will find a list of considerations that were taken into account while developing the solution for the exercise. The exercise has been implemented following the statement.
