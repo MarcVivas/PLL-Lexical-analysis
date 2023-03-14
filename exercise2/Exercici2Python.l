@@ -27,9 +27,7 @@
 
 \(|\)|\[|\]|\{|\}|\.|\,|\:|\;|\@	{total+=1; separators+=1;}
 
-[0-9]*\.?[0-9]*	{total+=1; constants+=1;}
-
-\"[^\"]*\"|\'[^\']*\'	{total+=1; constants+=1;}
+[0-9]*\.?[0-9]*|\"[^\"]*\"|\'[^\']*\'	{total+=1; constants+=1;}
 
 
 "#".*        { total+=1; comments+=1;}
@@ -51,16 +49,25 @@ int main( int argc, char *argv[] ){
 
     yyin = fopen( argv[ 1 ], "r" );
 
-    yylex();
-    printf("Reservat: %f%\n", (keywords/total)*100 );
-    printf("Identificadors: %f%\n", (ids/total)*100 );
-    printf("Operadors: %f%\n", (operators/total)*100 );
-    printf("Espais en blanc: %f%\n", (whitespace/total)*100 );
-    printf("Comentaris: %f%\n", (comments/total)*100 );
-    printf("Separadors: %f%\n", (separators/total)*100 );
-    printf("Constants: %f%\n", (constants/total)*100 );
-    printf("Auxiliars: %f%\n", (auxiliars/total)*100 );
-    printf("Total: %d\n", total);
+    yylex();   
+    printf("Reservat: %f%%", (keywords/total)*100 );
+    printf("\n");
+    printf("Identificadors: %f%%", (ids/total)*100);
+    printf("\n");
+    printf("Operadors: %f%%", (operators/total)*100);
+    printf("\n");
+    printf("Espais en blanc: %f%%", (whitespace/total)*100);
+    printf("\n");
+    printf("Comentaris: %f%%", (comments/total)*100);
+    printf("\n");
+    printf("Separadors: %f%%", (separators/total)*100);
+    printf("\n");
+    printf("Constants: %f%%", (constants/total)*100);
+    printf("\n");
+    printf("Auxiliars: %f%%", (auxiliars/total)*100);
+    printf("\n");
+    printf("Total: %d", total);
+    printf("\n");
 
     return EXIT_SUCCESS;
 }
