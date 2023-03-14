@@ -43,19 +43,19 @@ The choosen language for this exercise is Python, due to our familiarity to it.
 
 ### Basic description
 The program counts how many elements of each Python category exist on a specific file, and at the end shows the percentage of each and the total number of elements found
-### Categories
+### Keywords
 For the keywords category, we simply used a list of all the Python keywords: False, class, from, or, None, continue, global, pass, True, def, if, raise, and, del, import, return, as, elif, in, try, assert, else, is, while, async, except, lambda, with, await, finally, nonlocal, yield, break, for, not
-
+### Identifiers
 For the identifiers, we followed the identifier name rules for Python: any group of letters (capitals or not), numbers and underscore (\_), as long as the first character is a letter.
-
+### Whitespaces
 Just like with keywords, for whitespices we simply use a list
-
+### Separators
 Once more, we use a full list for the separators.
-
+### Constants
 For constants, on one hand we detect digit groups that can have a dot between them, which covers integers and floats. We also detect characters surrounded by "" or '', which covers both strings and character constants.
-
+### Whitespaces
 For comments, we simply detect lines starting with #.
-
+### Auxiliars
 Any other character is considered an auxiliar.
 
 ## Exercise 3
